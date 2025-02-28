@@ -126,18 +126,7 @@ button:hover{
     transition-timing-function: ease-in-out;
     transition-property: all;
 }
-.fa-dot-circle-o {
-    font-size: 24px; /* Adjust the size */
-    color: red; /* Change the color */
-    margin-right: 10px; /* Add spacing */
-    justify-content: center;
-    align-self: center;
-    border: 5px;
-    align-content: center;
-    display: block;
-    text-align: center;
-    padding-left: 350px;
-}
+
 
 
 h1{
@@ -318,19 +307,6 @@ cursor: pointer;
         color: rgb(0, 136, 204);
         text-decoration: none;
     }
-    .login-box{
-        width:700px;
-        height: 700px;
-        background-color:rgb(rgb(58, 55, 55));
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-      
-        
-text-align: center;
-       
-    }
-
     hr.dashed{
         border-top:3px dashed #0563c1;
         border-top-width: 0.8px;
@@ -426,3 +402,189 @@ color:rgb(20, 68, 153);
   
 }
 
+           /*Login Page*/
+.login-box{
+    width:700px;
+    height: 400px;
+    background-color:rgb(rgb(58, 55, 55));
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    text-align: justify;
+    width: 510.4px;
+    margin: auto;
+    font-family: CircularStd, sans-serif;
+
+}
+
+.login-page{
+    text-align: center;
+    align-items: center;
+}
+
+.btn-success{
+    text-align: center;
+    color:white;
+    background-color: rgb(20, 68, 153);
+    display: center;
+    font-family: Arial;
+    font-weight: 400px;  
+}
+.click-button{
+height:52.4px;
+text-align: center;
+width: 378.49px;
+padding-inline-start: 70px;
+display: flex;
+box-sizing: border-box;
+width: 378px;
+height:52.4px ;
+line-height: 21px;
+margin-bottom: 10px;
+font-size: 50px;
+}
+.click-button a{
+    color: white;
+    text-decoration: none;
+}
+h2{
+color:rgb(8, 62, 158) ;
+font-family: Arial;
+font-size: 40px;
+}
+
+.intro a{ 
+    text-decoration: none;
+    color:rgb(0, 136, 204);
+    font-weight: 400;
+    margin-top: 20px;
+    font-family:Arial;
+}
+.kick a{
+    text-decoration: none;
+    color:rgb(0, 136, 204);
+    font-size: 16px;
+    font-weight: 400;
+   font-family:Arial;
+}
+/* progression bar*/
+
+
+.step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background:#ddd ;
+    color:white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Active and completed steps */
+.step.active-step {
+    background: #3498db;
+}
+
+.step.completed-step {
+    background: #3498db;
+}
+
+/* Small blue dot inside the active step */
+.step.active-step::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Add labels below the steps */
+.step-label {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Progress Bar Line */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Grey Line */
+.progress-container::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    z-index: -1;
+    
+}
+.progress-container::after{
+    color: #0563c1;
+}
+
+/* Animated Green Progress Bar */
+.progress-bar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #4caf50;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+.progress-bar-fill {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    background-color: #3498db;
+    transition: width 0.4s ease-in-out;
+    z-index: 0;
+}
+
+/* Landing page*/
+.respo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+}
+
+.think img {
+    display: block;
+    margin:auto;
+}
+
+.legzy{
+    color:rgb(8, 62, 158) ;
+    font-family: Roboto;
+    font-size: 30px;
+}

@@ -5,26 +5,174 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="Signup" href="index.html">
+    <link rel="Valid" href="welcome.html">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                      </svg></a></li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Stories</a> </li>
+                    <li><a href="#">FAQ</a> </li>
+                    <li><a href="#">Blog</a> </li>
+                    <li><a href="#">Log In</a> </li>
+                    <li><a href="#">Create a Free Account</a> </li>
+                </ul>
     
+                <ul>
+                    <!--<li><a href="#">piggy</a></li>-->
+                    <li class="showOnMobile"><a href="#"><img src="piggy-png_1_.png" width="156.962"></a></li>
+                    <li class="hideOnMobile"><a href="#">About</a></li> 
+                    <li class="hideOnMobile"><a href="#">Stories</a> </li>
+                    <li class="hideOnMobile"><a href="#">FAQ</a> </li>
+                    <li class="hideOnMobile"><a href="#">Blog</a> </li>
+                    <li class="hideOnMobile"><a href="#">Log In</a> </li>
+                    <li class="hideOnMobile"><button>Create a Free Account</button> </li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="8" x2="20" y2="8"></line>
+                        <line x1="4" y1="16" x2="20" y2="16"></line>
+                        <line x1="4" y1="24" x2="20" y2="24"></line>
+                      </svg></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+        <div class="progress-bar-fill" id="progressBar"></div>
+        <a href="index.html">
+        <div class="step completed-step"></div></a>  <!-- Completed -->
+        <a href="login.html">
+        <div class="step active-step"></div></a>  <!-- Active -->
+        <a href="welcome.html">
+        <div class="step"></div></a> <!-- Inactive -->
+    </div>
+    <!-----
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+        
+        <a href="index.html">
+            <div class="step active-step"></div>
+            <span class="step-label">Sign Up</span>
+        </a>
+        
+        <a href="login.html">
+            <div class="step"></div>
+            <span class="step-label">Set Withdrawal</span>
+        </a>
+        
+        <a href="welcome.html">
+            <div class="step"></div>
+            <span class="step-label">Activate</span>
+        </a>
+        
+    </div>
+ <!--Progression bar--
+ <div class="progress-container">
+    <div class="progress-bar"></div>
+    <a href="index.html">
+    <label for="step1" class="step" data-text=" Sign Up"></label></a>
+    <a href="login.html">
+    <label for="step2" class="step" data-text="Set Withdrawal"></label></a>
+    <a href="welcome.html">
+    <label for="step3" class="step" data-text="Activate"></label></a>
+</div>
+<!--progression bar-->    
+<br>
+<br>
     <div class="login-box">
-        <h1>Login</h1>
-        <p>Securely login to your Piggyvest</p>
-        <form>    
-            <label>Phone Number</label>
-    <input type="PhoneNumber" placeholder="08123******" > 
-<label>Your Password</label>
-    <input type="password" placeholder="********">
+        <h2>Secure Login</h2>
+        <p>it's time to save & invest</p>
+        <form action="#" class="Login-page">    
+            <label>Email or Phone Number</label>
+    <input type="Email or PhoneNumber"> 
+<label>Password</label>
+    <input type="password" >
     <br>
-    <input type="button" value="Login">
+    <!--<hr class="dashed">-->
+    
+    <div class="click-button">
+    <button type="submit" class=" btn-success" id="login"><i class="fa fa-lock"></i><a href="welcome.html"> Secure Login</a>
+    </button>
 
-    <p> Don't have an account? <a href='index.html'>Register!</a></p>
-    <p>Forgot Password? Tap Here!</p>
-
+</div>
         </form>
+        <br>
+        <p class="intro"><a href='index.html'>Create an Account Instead</a></p>
+    <p class="kick"><a href="#">Forgot Password?</a></p>
     </div>
     
 </body>
+         <!----Footer part-->
+         <footer class="footer">
+            <hr 
+                width: 0.01px;>
+            <div class="downside">
+                <div class="footer-paragraph">
+                    <h5 class="logo">
+                        <img src="piggy-png_1_.png" width="156.962">
+                    </h5>
+                    <ul>
+                        <p>
+                            PiggyVest <span class="dinst">(formerly piggybank.ng)</span> is the largest online savings & investing platform in Nigeria.
+                            For over 4 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.
+                            </p>
+                        <br>
+                        <p>Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali Ayorinde Street, Victoria Island, Lagos.
+
+                            <span class="dinst">0700 933 933 933 (Mon-Fri from 9am-5pm) - contact@piggyvest.com</span>
+                        </p>
+                            <br>
+                        <p> &copy; 2016 - 2025 PiggyTech Global Limited - Rc 1405222</p>                               
+                    </ul>
+                </div>
+                <div class="row">
+                <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <a href="#">AutoSave<small><sup>TM</sup></small></a>
+                            <br>
+                            <a href="#">PiggyLink</a>
+                                <br>
+                            <a href="#">Quick Save<small><sup>TM</sup></small></a>
+                            <br>
+                            <a href="#">SafeLock<small><sup>TM</sup></small></a>
+                                <br>
+                            <a href="#">Withdrawals & Breaking</a>
+                            <br>
+                            <a href="#">Salary Management</a>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <a href="#">About</a>
+                            <br>
+                            <a href="#">FAQs</a>
+                            <br>
+                            <a href="#">Terms of Use</a>
+                            <br>
+                            <a href="#">Privacy Policy</a>
+                           
+                        </ul>
+                        <li class="social-links"></li>
+                        <h9 class="image">
+                            <img src="social-media-icon-FB-80-min.webp" width="30px">
+                            <img src="social-media-icon-TWT-80-min.webp" width="30px">
+                            <img src="social-media-icon-instagram-80-min.png" width="30">
+                            </h9>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        
+        </footer>
 </html>

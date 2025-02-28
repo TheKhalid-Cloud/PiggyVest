@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="Signup" href="index.html">
+    <link rel="Login" href="body.html">
+    <title>PiggyVest</title>
+    <header>
+        <nav>
+            <div class="container">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                  </svg></a></li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Stories</a> </li>
+                <li><a href="#">FAQ</a> </li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">Log In</a> </li>
+                <li><a href="#">Create a Free Account</a> </li>
+            </ul>
+
+            <ul>
+                <!--<li><a href="#">piggy</a></li>-->
+                <li class="showOnMobile"><a href="#"><img src="piggy-png_1_.png" width="156.962"></a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li> 
+                <li class="hideOnMobile"><a href="#">Stories</a> </li>
+                <li class="hideOnMobile"><a href="#">FAQ</a> </li>
+                <li class="hideOnMobile"><a href="#">Blog</a> </li>
+                <li class="hideOnMobile"><a href="#">Log In</a> </li>
+                <li class="hideOnMobile"><button>Create a Free Account</button> </li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="8" x2="20" y2="8"></line>
+                    <line x1="4" y1="16" x2="20" y2="16"></line>
+                    <line x1="4" y1="24" x2="20" y2="24"></line>
+                  </svg></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ='none'
+        }
+    </script>
+    </header>
+</head>
+<body bgcolor="white">
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+        <div class="progress-bar-fill" id="progressBar"></div>
+        <a href="index.html">
+        <div class="step completed-step" data-text="Sign Up"></div></a>  <!-- Completed -->
+        <a href="login.html">
+        <div class="step completed-step" data-text="Withdrawal"></div></a>  <!-- Active -->
+        <a href="welcome.html">
+        <div class="step active-step" data-text="Activate"></div></a> <!-- Inactive -->
+    </div>
+    
+   
+<!--progression--
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+        <a href="index.html">
+        <label for="step1" class="step" data-text=" Sign Up"></label></a>
+        <a href="login.html">
+        <label for="step2" class="step" data-text="Set Withdrawal"></label></a>
+        <label for="step4" class="step" data-text="Activate"></label>
+    </div>
+<!--progression bar-->    
+
+
+    <div class="respo">
+        <h7 class="think">
+        <img src="Succesful.png" width="300px">
+        <br>
+        <p class="legzy"> WELCOME</p>
+        </h7>
+</div>
+    
+</body>
+<footer class="footer">
+    <hr 
+        width: 0.01px;>
+    <div class="downside">
+        <div class="footer-paragraph">
+            <h5 class="logo">
+                <img src="piggy-png_1_.png" width="156.962">
+            </h5>
+            <ul>
+                <p>
+                    PiggyVest <span class="dinst">(formerly piggybank.ng)</span> is the largest online savings & investing platform in Nigeria.
+                    For over 4 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.
+                    </p>
+                <br>
+                <p>Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali Ayorinde Street, Victoria Island, Lagos.
+
+                    <span class="dinst">0700 933 933 933 (Mon-Fri from 9am-5pm) - contact@piggyvest.com</span>
+                </p>
+                    <br>
+                <p> &copy; 2016 - 2025 PiggyTech Global Limited - Rc 1405222</p>                               
+            </ul>
+        </div>
+        <div class="row">
+        <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <a href="#">AutoSave<small><sup>TM</sup></small></a>
+                    <br>
+                    <a href="#">PiggyLink</a>
+                        <br>
+                    <a href="#">Quick Save<small><sup>TM</sup></small></a>
+                    <br>
+                    <a href="#">SafeLock<small><sup>TM</sup></small></a>
+                        <br>
+                    <a href="#">Withdrawals & Breaking</a>
+                    <br>
+                    <a href="#">Salary Management</a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>COMPANY</h4>
+                <ul>
+                    <a href="#">About</a>
+                    <br>
+                    <a href="#">FAQs</a>
+                    <br>
+                    <a href="#">Terms of Use</a>
+                    <br>
+                    <a href="#">Privacy Policy</a>
+                   
+                </ul>
+                <li class="social-links"></li>
+                <h9 class="image">
+                    <img src="social-media-icon-FB-80-min.webp" width="30px">
+                    <img src="social-media-icon-TWT-80-min.webp" width="30px">
+                    <img src="social-media-icon-instagram-80-min.png" width="30">
+                    </h9>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+</footer>
+</html>
